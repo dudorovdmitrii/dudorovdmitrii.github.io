@@ -1,0 +1,36 @@
+$fontFamily: "SF Compact Display",sans-serif;
+
+.generalText {
+    color: var(--black);
+    font-family: $fontFamily;
+    font-size: var(--huge-font);
+    font-weight: 100;
+    line-height: 32.12px;
+    white-space: pre-wrap;
+}
+
+.linkText {
+    color: var(--dark-green);
+    font-family: $fontFamily;
+    font-size: var(--big-font);
+}
+
+@mixin detailsText {
+    color: var(--black);
+    font-family: $fontFamily;
+    font-size: var(--regular-font);
+    line-height: 21.41px;
+    white-space: pre-wrap;
+}
+
+.detailsTextStrong {
+    @include detailsText;
+
+    font-weight: 400;
+}
+
+.detailsTextLight {
+    @include detailsText;
+
+    font-weight: 100;
+}

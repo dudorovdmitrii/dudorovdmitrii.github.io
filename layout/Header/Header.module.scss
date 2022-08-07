@@ -1,0 +1,24 @@
+@use "../../styles/global.scss";
+
+.header {
+    display: flex;
+    max-width: global.$maxWidth;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 30px 8px;
+    margin: 0 auto;
+    background: var(--background);
+
+    .header_link {
+        height: fit-content;
+        cursor: pointer;
+        text-decoration: none;
+        user-select: none;
+    }
+
+    .header_nav {
+        display: flex;
+        gap: 56px;
+    }
+}
