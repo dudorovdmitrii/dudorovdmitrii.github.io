@@ -86,7 +86,7 @@ export const Home = ({ className }: HomeProps): JSX.Element => {
                     return (
                         <li
                             key={id}
-                            className={cn(styles.productDetails_actions_productList_product)}>
+                            className={cn(styles.productDetails_actions_productList_product, styles.productWithPadding10)}>
                             <LoadingIcon className={cn(styles.productDetails_actions_productList_product_img, styles.loadingImage)} />
                         </li>)
 
@@ -236,6 +236,8 @@ export const Home = ({ className }: HomeProps): JSX.Element => {
             <figure className={styles.imageWrapper}>
                 <img
                     alt={"Home image"}
+                    width={867}
+                    height={1200}
                     src={homeImagePath}
                     ref={homeImageRef}
                     className={styles.imageWrapper_homeImage}

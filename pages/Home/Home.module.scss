@@ -168,6 +168,7 @@
                     display: flex;
                     width: 133px;
                     height: 133px;
+                    box-sizing: border-box;
                     align-content: center;
                     justify-content: center;
                     padding-bottom: 6px;
@@ -180,6 +181,10 @@
 
                         @include undraggableImage;
                     }
+                }
+
+                .productWithPadding10 {
+                    padding: 10px 0;
                 }
 
                 .responsiveProduct {
