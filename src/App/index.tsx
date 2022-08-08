@@ -17,7 +17,7 @@ export const App = WithLayout(({ className }: AppProps) => {
     return (
         <>
             <Routes>
-                <Route path={"/"} element={<Home className={className} />} />
+                <Route path={"/ease"} element={<Home className={className} />} />
             </Routes>
         </>)
 })

@@ -16,6 +16,7 @@ app.get('/', function (req, res) {
 })
 
 app.get('/products', (req, res) => {
+    console.log('sent')
     res.json(products)
 })
 

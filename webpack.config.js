@@ -89,7 +89,8 @@ module.exports = {
 			filename: 'styles.css',
 		}),
 		new HtmlWebpackPlugin({
-			template: 'public/index.html'
+			template: 'public/index.html',
+			inject: false
 		}),
 		new CopyPlugin({
 			patterns: [

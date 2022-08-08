@@ -1,2 +1,4 @@
-export const API_URL = 'https://dudorovdmitrii.github.io'
-export const GET_Products_URL = 'https://private-anon-27e35804b8-lampshop.apiary-mock.com/lamps'
+// export const API_URL = 'http://localhost:3000'
+export const API_URL = 'https://dudorovdmitrii.github.io/ease'
+
+export const GET_Products_URL = 'https://private-anon-ff8d7db8d2-lampshop.apiary-mock.com/lamps'

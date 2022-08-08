@@ -14,12 +14,14 @@ const initialState: initialStateInterface = {
     error: null
 }
 
-const GET_Products_Settings = {
-    method: 'GET',
-}
-
 export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
-    return await fetch(GET_Products_URL, GET_Products_Settings).then(res => res.json())
+    return await fetch(GET_Products_URL,
+        {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        }).then(res => res.json())
 })
 
 export const productsSlice = createSlice({

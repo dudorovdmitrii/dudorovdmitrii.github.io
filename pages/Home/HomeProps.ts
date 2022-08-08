@@ -13,8 +13,8 @@ export const homeGeneralInfo = `Collection of lighting is inspired by the geomet
 \nSuprematism is a modernist movement in the art of the early twentieth century, focused on the basic geometric forms, such as circles, squares, lines and rectangles.The geometric structure of the lamps will always look like a small art objects in your house.`
 
 // Home image paths
-export const homeImageDayPath = API_URL + '/dist/public/images/day.webp'
-export const homeImageNightPath = API_URL + '/dist/public/images/night.webp'
+export const homeImageDayPath = API_URL + '/public/images/day.webp'
+export const homeImageNightPath = API_URL + '/public/images/night.webp'
 
 
 // Animations

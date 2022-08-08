@@ -13,10 +13,10 @@ export const Header = ({ className }: HeaderProps) => {
     return (
         <header className={cn(className, styles.header)}>
             <Link
-                to={"/"}
+                to={"/ease"}
                 className={styles.header_link}
                 aria-label={'Home page'}
-                aria-selected={pathname === "/"}
+                aria-selected={pathname === "/ease"}
             >
                 <LogoIcon className={styles.header_link_logo} />
             </Link>
