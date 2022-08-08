@@ -1,5 +1,9 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable no-undef */
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require("copy-webpack-plugin")
 
 const isDevelopment = true
 module.exports = {
@@ -83,6 +87,21 @@ module.exports = {
 	plugins: [
 		new MiniCssExtractPlugin({
 			filename: 'styles.css',
-		})
+		}),
+		new HtmlWebpackPlugin({
+			template: 'public/index.html'
+		}),
+		new CopyPlugin({
+			patterns: [
+				{
+					from: "public",
+					to: "public",
+					globOptions: {
+						ignore: ["**/index.html"],
+					},
+				},
+
+			],
+		}),
 	]
 }
