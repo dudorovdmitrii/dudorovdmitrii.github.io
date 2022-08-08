@@ -11,12 +11,11 @@ app.listen(3000)
 
 app.use('/dist', express.static(path.resolve(__dirname, './dist')))
 
-app.get('/', function (req, res) {
+app.get('/ease', function (req, res) {
     res.sendFile(path.join(__dirname, 'public/index.html'));
 })
 
 app.get('/products', (req, res) => {
-    console.log('sent')
     res.json(products)
 })
 
